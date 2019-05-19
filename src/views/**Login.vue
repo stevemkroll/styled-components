@@ -22,7 +22,7 @@
 <script>
 export default {
   name: "login",
-  props: ["device"]
+  props: ["device", "brand"]
 };
 </script>
 

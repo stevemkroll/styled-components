@@ -6,7 +6,7 @@ const device = {
     width: null
   },
   mutations: {
-    update(state, payload) {
+    updateDevice(state, payload) {
       state.os = payload.os
       state.lang = payload.lang
       state.height = payload.height
@@ -14,12 +14,12 @@ const device = {
     }
   },
   actions: {
-    update(context, payload) {
-      context.commit('update', payload)
+    updateDevice(context, payload) {
+      context.commit('updateDevice', payload)
     }
   },
   getters: {
-    device: (state) => {
+    getDevice: (state) => {
       return state
     }
   }

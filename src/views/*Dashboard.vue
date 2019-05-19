@@ -22,7 +22,7 @@
 <script>
 export default {
   name: "dashboard",
-  props: ["device"]
+  props: ["device", "brand"]
 };
 </script>
 
