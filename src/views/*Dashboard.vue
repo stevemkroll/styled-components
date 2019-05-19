@@ -15,14 +15,23 @@
         <small>width: {{device.width}}</small>
       </p>
     </section>
-    <router-link to="/">go to login</router-link>
+    <Button
+      :background="brand.color.secondary"
+      :text="'white'"
+      :disabled="false"
+      @click="() => {this.$router.push('/')}"
+    >go to login</Button>
   </div>
 </template>
 
 <script>
+import Button from "@/components/Button";
 export default {
   name: "dashboard",
-  props: ["device", "brand"]
+  props: ["device", "brand"],
+  components: {
+    Button
+  }
 };
 </script>
 
