@@ -1,9 +1,5 @@
 <template>
-  <div id="app">
-    <transition name="fade">
-      <router-view :device="getDevice" :brand="getBrand"/>
-    </transition>
-  </div>
+  <router-view id="app" :device="getDevice" :brand="getBrand"/>
 </template>
 
 <script>
