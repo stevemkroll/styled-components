@@ -7,7 +7,7 @@ const btnProps = {
 };
 
 // eslint-disable-next-line no-unexpected-multiline
-const StyledButton = styled('button', btnProps)
+const button_template = styled('button', btnProps)
 `
   padding: 8px;
   margin: 8px;
@@ -32,4 +32,4 @@ const StyledButton = styled('button', btnProps)
   }
 `;
 
-export default StyledButton;
+export default button_template;

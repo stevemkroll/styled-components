@@ -16,32 +16,24 @@
       </p>
     </section>
     <section>
-      <Button
-        :background="brand.color.primary"
-        :text="'white'"
-        :disabled="false"
-        @click="() => {this.$router.push('/dashboard')}"
-      >go to dashboard</Button>
-      <Button
-        :background="brand.color.primary"
-        :text="'white'"
-        :disabled="true"
-        @click="() => {this.$router.push('/dashboard')}"
-      >disabled</Button>
+      <PrimaryButton
+        :brand="brand"
+        :isDisabled="false"
+        :action="() => {this.$router.push('/dashboard')}"
+      >go to dashboard</PrimaryButton>
+      <TertiaryButton
+        :brand="brand"
+        :isDisabled="true"
+        :action="() => {this.$router.push('/dashboard')}"
+      >go to dashboard</TertiaryButton>
     </section>
   </div>
 </template>
 
 <script>
-import Button from "@/components/Button";
 export default {
   name: "login",
   props: ["device", "brand"],
-  components: {
-    Button
-  }
+  components: {}
 };
 </script>
-
-<style>
-</style>

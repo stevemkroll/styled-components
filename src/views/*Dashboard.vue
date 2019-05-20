@@ -15,25 +15,25 @@
         <small>width: {{device.width}}</small>
       </p>
     </section>
-    <Button
-      :background="brand.color.secondary"
-      :text="'white'"
-      :disabled="false"
-      @click="() => {this.$router.push('/')}"
-    >go to login</Button>
+    <section>
+      <SecondaryButton
+        :brand="brand"
+        :isDisabled="false"
+        :action="() => {this.$router.push('/')}"
+      >go to login</SecondaryButton>
+      <QuaternaryButton
+        :brand="brand"
+        :isDisabled="true"
+        :action="() => {this.$router.push('/')}"
+      >go to login</QuaternaryButton>
+    </section>
   </div>
 </template>
 
 <script>
-import Button from "@/components/Button";
 export default {
   name: "dashboard",
   props: ["device", "brand"],
-  components: {
-    Button
-  }
+  components: {}
 };
 </script>
-
-<style>
-</style>

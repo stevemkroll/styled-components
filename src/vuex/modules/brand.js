@@ -4,8 +4,10 @@ const brand = {
       primary: null,
       secondary: null,
       tertiary: null,
-      quaternary: null
-    }
+      quaternary: null,
+      light: null,
+      dark: null
+    },
   },
   mutations: {
     updateBrand(state, payload) {
@@ -13,6 +15,8 @@ const brand = {
       state.color.secondary = payload.color.secondary
       state.color.tertiary = payload.color.tertiary
       state.color.quaternary = payload.color.quaternary
+      state.color.light = payload.color.light
+      state.color.dark = payload.color.dark
     }
   },
   actions: {
