@@ -10,6 +10,7 @@ const bgTemplate = styled('div', props)
 `
   background: ${props => props.background};
   color: ${props => props.text};
+  
 `;
 
 export default bgTemplate;

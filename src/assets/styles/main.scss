@@ -1,1 +1,13 @@
 @import "./bulma/bulma.sass";
+
+.is-fixed {
+  position: fixed !important;
+  top: 0rem !important;
+  right: 0rem !important;
+  bottom: 0rem !important;
+  left: 0rem !important;
+  user-select: none !important;
+  touch-action: none !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}

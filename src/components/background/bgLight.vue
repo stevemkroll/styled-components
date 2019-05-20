@@ -1,5 +1,5 @@
 <template>
-  <bgTemplate :background="brand.color.light" :text="brand.color.dark">
+  <bgTemplate :background="brand.color.light" :text="brand.color.primary">
     <slot></slot>
   </bgTemplate>
 </template>

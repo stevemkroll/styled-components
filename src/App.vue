@@ -1,5 +1,5 @@
 <template>
-  <router-view id="app" class="container" :device="getDevice" :brand="getBrand"/>
+  <router-view :device="getDevice" :brand="getBrand"/>
 </template>
 
 <script>

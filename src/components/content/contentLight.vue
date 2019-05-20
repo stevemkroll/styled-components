@@ -1,5 +1,9 @@
 <template>
-  <contentTemplate :background="brand.color.light" :text="brand.color.primary">
+  <contentTemplate
+    class="content-light"
+    :background="brand.color.light"
+    :text="brand.color.primary"
+  >
     <slot></slot>
   </contentTemplate>
 </template>
