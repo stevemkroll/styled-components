@@ -6,6 +6,7 @@ const btnProps = {
   disabled: Boolean
 };
 
+// eslint-disable-next-line no-unexpected-multiline
 const StyledButton = styled('button', btnProps)
 `
   padding: 8px;
