@@ -1,9 +1,13 @@
 <template>
-  <bg-primary id="login" :brand="brand">
-    <img src="@/assets/logo.svg" width="200">
-    <p>Hello</p>
-    <SecondaryButton :brand="brand" :disabled="false">go to dash</SecondaryButton>
-  </bg-primary>
+  <bg-light id="login" :brand="brand">
+    <content-light :brand="brand">
+      <btn-secondary
+        :brand="brand"
+        :disabled="false"
+        :action="() => this.$router.push('/dashboard')"
+      >go to dash</btn-secondary>
+    </content-light>
+  </bg-light>
 </template>
 
 <script>
@@ -13,11 +17,3 @@ export default {
   components: {}
 };
 </script>
-
-<style lang="scss" scoped>
-img {
-  // flex: 1 0 auto;
-  width: 12rem;
-}
-</style>
-

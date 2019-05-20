@@ -5,15 +5,25 @@ import store from './store'
 
 import "@/assets/styles/main.scss"
 
-import PrimaryButton from "@/components/buttons/PrimaryButton"
-import SecondaryButton from "@/components/buttons/SecondaryButton"
-import TertiaryButton from "@/components/buttons/TertiaryButton"
-import QuaternaryButton from "@/components/buttons/QuaternaryButton"
+import btnPrimary from "@/components/button/btnPrimary"
+import btnSecondary from "@/components/button/btnSecondary"
+import btnTertiary from "@/components/button/btnTertiary"
+import btnQuaternary from "@/components/button/btnQuaternary"
 
-Vue.component('PrimaryButton', PrimaryButton)
-Vue.component('SecondaryButton', SecondaryButton)
-Vue.component('TertiaryButton', TertiaryButton)
-Vue.component('QuaternaryButton', QuaternaryButton)
+Vue.component('btn-primary', btnPrimary)
+Vue.component('btn-secondary', btnSecondary)
+Vue.component('btn-tertiary', btnTertiary)
+Vue.component('btn-quaternary', btnQuaternary)
+
+import bgPrimary from "@/components/background/bgPrimary"
+import bgLight from "@/components/background/bgLight"
+
+Vue.component('bg-primary', bgPrimary)
+Vue.component('bg-light', bgLight)
+
+import contentLight from "@/components/content/contentLight"
+
+Vue.component('content-light', contentLight)
 
 Vue.config.productionTip = false
 

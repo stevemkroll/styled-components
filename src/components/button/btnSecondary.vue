@@ -1,19 +1,19 @@
 <template>
-  <buttonTemplate
-    :background="brand.color.quaternary"
+  <btnTemplate
+    :background="brand.color.secondary"
     :text="brand.color.light"
     :disabled="isDisabled"
     @click="() => action()"
   >
     <slot></slot>
-  </buttonTemplate>
+  </btnTemplate>
 </template>
 
 <script>
-import buttonTemplate from "./button_template";
+import btnTemplate from "./*btnTemplate";
 export default {
-  name: "QuaternaryButton",
+  name: "SecondaryButton",
   props: ["brand", "isDisabled", "action"],
-  components: { buttonTemplate }
+  components: { btnTemplate }
 };
 </script>

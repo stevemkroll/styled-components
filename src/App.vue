@@ -1,5 +1,5 @@
 <template>
-  <router-view id="app" :device="getDevice" :brand="getBrand"/>
+  <router-view id="app" class="container" :device="getDevice" :brand="getBrand"/>
 </template>
 
 <script>
@@ -41,5 +41,3 @@ export default {
   }
 };
 </script>
-
-

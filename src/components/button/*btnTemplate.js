@@ -1,13 +1,13 @@
 import styled from 'vue-styled-components';
 
-const btnProps = {
+const props = {
   background: String,
   text: String,
   disabled: Boolean
 };
 
 // eslint-disable-next-line no-unexpected-multiline
-const button_template = styled('button', btnProps)
+const btnTemplate = styled('button', props)
 `
   padding: 8px;
   margin: 8px;
@@ -32,4 +32,4 @@ const button_template = styled('button', btnProps)
   }
 `;
 
-export default button_template;
+export default btnTemplate;

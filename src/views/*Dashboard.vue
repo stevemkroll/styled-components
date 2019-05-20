@@ -16,7 +16,7 @@
       </p>
     </section>
     <section>
-      <SecondaryButton
+      <!-- <SecondaryButton
         :brand="brand"
         :isDisabled="false"
         :action="() => {this.$router.push('/')}"
@@ -25,7 +25,7 @@
         :brand="brand"
         :isDisabled="true"
         :action="() => {this.$router.push('/')}"
-      >go to login</QuaternaryButton>
+      >go to login</QuaternaryButton>-->
     </section>
   </div>
 </template>
