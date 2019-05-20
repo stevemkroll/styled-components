@@ -18,11 +18,19 @@ export default {
     ...mapActions(["updateDevice", "updateBrand"])
   },
   mounted() {
+    window.addEventListener("resize", () => {
+      this.updateDevice({
+        os: window.navigator.userAgent,
+        lang: window.navigator.language,
+        height: window.innerHeight,
+        width: window.innerWidth
+      });
+    });
     this.updateDevice({
       os: window.navigator.userAgent,
       lang: window.navigator.language,
-      height: window.outerHeight,
-      width: window.outerWidth
+      height: window.innerHeight,
+      width: window.innerWidth
     });
     this.updateBrand({
       color: {

@@ -11,7 +11,7 @@ const device = {
       state.lang = payload.lang
       state.height = payload.height
       state.width = payload.width
-    }
+    },
   },
   actions: {
     updateDevice(context, payload) {
