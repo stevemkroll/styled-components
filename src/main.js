@@ -7,15 +7,15 @@ import "@/assets/main.scss"
 import "@fortawesome/fontawesome-free/js/all.js"
 
 // BUTTONS
-import btnPrimary from "@/components/button/btnPrimary"
-import btnSecondary from "@/components/button/btnSecondary"
-import btnTertiary from "@/components/button/btnTertiary"
-import btnQuaternary from "@/components/button/btnQuaternary"
+import btnSuccess from "@/components/button/btnSuccess"
+import btnInfo from "@/components/button/btnInfo"
+import btnWarning from "@/components/button/btnWarning"
+import btnError from "@/components/button/btnError"
 
-Vue.component('btn-primary', btnPrimary)
-Vue.component('btn-secondary', btnSecondary)
-Vue.component('btn-tertiary', btnTertiary)
-Vue.component('btn-quaternary', btnQuaternary)
+Vue.component('btn-success', btnSuccess)
+Vue.component('btn-info', btnInfo)
+Vue.component('btn-warning', btnWarning)
+Vue.component('btn-error', btnError)
 
 // TAGS
 import tagSuccess from "@/components/tag/tagSuccess"

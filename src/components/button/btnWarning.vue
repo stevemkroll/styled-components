@@ -1,7 +1,7 @@
 <template>
   <btnTemplate
-    :background="brand.color.primary"
-    :text="brand.color.light"
+    :background="brand.color.warning"
+    :text="brand.button.text"
     :modifier="brand.size.modifier"
     :disabled="isDisabled"
     @click="() => action()"
@@ -13,7 +13,7 @@
 <script>
 import btnTemplate from "./*btnTemplate";
 export default {
-  name: "btn-primary",
+  name: "btn-warning",
   props: ["brand", "isDisabled", "action"],
   components: { btnTemplate }
 };

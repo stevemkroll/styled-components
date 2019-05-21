@@ -1,7 +1,7 @@
 <template>
   <tagTemplate
     :background="brand.color.success"
-    :text="brand.color.light"
+    :text="brand.button.text"
     :modifier="brand.size.modifier"
     disabled
   >

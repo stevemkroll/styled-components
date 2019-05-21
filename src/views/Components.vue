@@ -2,26 +2,18 @@
   <div>
     <section>
       <h1>Buttons</h1>
-      <btn-primary
+      <btn-success
         :brand="brand"
         :isDisabled="false"
-        :action="() => showAlert('primary')"
-      >primary button</btn-primary>
-      <btn-secondary
+        :action="() => showAlert('success')"
+      >success button</btn-success>
+      <btn-info :brand="brand" :isDisabled="false" :action="() => showAlert('info')">info button</btn-info>
+      <btn-warning
         :brand="brand"
         :isDisabled="false"
-        :action="() => showAlert('secondary')"
-      >secondary button</btn-secondary>
-      <btn-tertiary
-        :brand="brand"
-        :isDisabled="false"
-        :action="() => showAlert('tertiary')"
-      >tertiary button</btn-tertiary>
-      <btn-quaternary
-        :brand="brand"
-        :isDisabled="false"
-        :action="() => showAlert('quaternary')"
-      >quaternary button</btn-quaternary>
+        :action="() => showAlert('warning')"
+      >warning button</btn-warning>
+      <btn-error :brand="brand" :isDisabled="false" :action="() => showAlert('error')">error button</btn-error>
     </section>
     <section>
       <h1>Tags</h1>
