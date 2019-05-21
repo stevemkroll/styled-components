@@ -3,7 +3,7 @@
     :background="brand.color.success"
     :text="brand.button.text"
     :modifier="brand.size.modifier"
-    :disabled="isDisabled"
+    :disabled="disabled"
     @click="() => action()"
   >
     <slot></slot>
@@ -14,7 +14,7 @@
 import btnTemplate from "./*btnTemplate";
 export default {
   name: "btn-success",
-  props: ["brand", "isDisabled", "action"],
+  props: ["brand", "disabled", "action"],
   components: { btnTemplate }
 };
 </script>

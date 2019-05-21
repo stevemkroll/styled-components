@@ -28,6 +28,13 @@ Vue.component('tag-info', tagInfo)
 Vue.component('tag-warning', tagWarning)
 Vue.component('tag-error', tagError)
 
+import inputUser from "@/components/input/inputUser"
+import inputPassword from "@/components/input/inputPassword"
+
+Vue.component('input-user', inputUser)
+Vue.component('input-password', inputPassword)
+
+
 Vue.config.productionTip = false
 
 new Vue({

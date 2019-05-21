@@ -9,6 +9,11 @@ const brand = {
     button: {
       text: "#ffffff"
     },
+    input: {
+      text: "#666666",
+      background: "#ffffff",
+      border: "#dddddd"
+    },
     size: {
       modifier: "8",
     },
