@@ -2,6 +2,7 @@
   <btnTemplate
     :background="brand.color.primary"
     :text="brand.color.light"
+    :modifier="brand.size.modifier"
     :disabled="isDisabled"
     @click="() => action()"
   >

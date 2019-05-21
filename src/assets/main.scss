@@ -1,0 +1,19 @@
+// @import "./bulma/bulma.sass";
+
+* {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+html,
+body {
+  overflow: hidden;
+  // user-select: none;
+  // pointer-events: none;
+  // touch-action: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

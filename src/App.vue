@@ -28,16 +28,16 @@ export default {
       height: window.innerHeight,
       width: window.innerWidth
     });
-    this.updateBrand({
-      color: {
-        primary: "#2d2341",
-        secondary: "#7887e6",
-        tertiary: "#ff5073",
-        quaternary: "#00c8d2",
-        light: "#ffffff",
-        dark: "#666666"
-      }
-    });
+    // this.updateBrand({
+    //   color: {
+    //     primary: "#2d2341",
+    //     secondary: "#7887e6",
+    //     tertiary: "#ff5073",
+    //     quaternary: "#00c8d2",
+    //     light: "#ffffff",
+    //     dark: "#666666"
+    //   }
+    // });
   }
 };
 </script>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <section>
+      <h1>Buttons</h1>
       <btn-primary
         :brand="brand"
         :isDisabled="false"
@@ -23,33 +24,18 @@
       >quaternary button</btn-quaternary>
     </section>
     <section>
-      <btn-primary
-        :brand="brand"
-        :isDisabled="true"
-        :action="() => showAlert('primary')"
-      >primary button</btn-primary>
-      <btn-secondary
-        :brand="brand"
-        :isDisabled="true"
-        :action="() => showAlert('secondary')"
-      >secondary button</btn-secondary>
-      <btn-tertiary
-        :brand="brand"
-        :isDisabled="true"
-        :action="() => showAlert('tertiary')"
-      >tertiary button</btn-tertiary>
-      <btn-quaternary
-        :brand="brand"
-        :isDisabled="true"
-        :action="() => showAlert('quaternary')"
-      >quaternary button</btn-quaternary>
+      <h1>Tags</h1>
+      <tag-success :brand="brand">success</tag-success>
+      <tag-info :brand="brand">info</tag-info>
+      <tag-warning :brand="brand">warning</tag-warning>
+      <tag-error :brand="brand">error</tag-error>
     </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: "login",
+  name: "buttons",
   props: ["device", "brand"],
   components: {},
   methods: {
@@ -60,8 +46,3 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.center {
-  text-align: center;
-}
-</style>

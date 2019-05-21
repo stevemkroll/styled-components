@@ -3,18 +3,20 @@ import styled from 'vue-styled-components';
 const props = {
   background: String,
   text: String,
+  modifier: String,
   disabled: Boolean
 };
 
 // eslint-disable-next-line no-unexpected-multiline
 const btnTemplate = styled('button', props)
 `
-  padding: 8px;
-  margin: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  transition: 0.5s;
+  padding: ${props => props.modifier + "px"};
+  margin: ${props => props.modifier + "px"};
+  border-radius: ${props => props.modifier / 2 + "px"};
+  border-width: ${props => props.modifier / 4 + "px"};
+  transition: ${props => ( ( props.modifier / 8 ) / 2 ) + "s"};
   font-weight: bold;
+  font-size: ${props => props.modifier * 1.5 + "px"};
   text-transform: capitalize;
   outline: none;
   border-color: ${props => props.background};

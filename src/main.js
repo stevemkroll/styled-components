@@ -3,8 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import "@/assets/styles/main.scss"
+import "@/assets/main.scss"
+import "@fortawesome/fontawesome-free/js/all.js"
 
+// BUTTONS
 import btnPrimary from "@/components/button/btnPrimary"
 import btnSecondary from "@/components/button/btnSecondary"
 import btnTertiary from "@/components/button/btnTertiary"
@@ -15,15 +17,16 @@ Vue.component('btn-secondary', btnSecondary)
 Vue.component('btn-tertiary', btnTertiary)
 Vue.component('btn-quaternary', btnQuaternary)
 
-import bgPrimary from "@/components/background/bgPrimary"
-import bgLight from "@/components/background/bgLight"
+// TAGS
+import tagSuccess from "@/components/tag/tagSuccess"
+import tagInfo from "@/components/tag/tagInfo"
+import tagWarning from "@/components/tag/tagWarning"
+import tagError from "@/components/tag/tagError"
 
-Vue.component('bg-primary', bgPrimary)
-Vue.component('bg-light', bgLight)
-
-import contentLight from "@/components/content/contentLight"
-
-Vue.component('content-light', contentLight)
+Vue.component('tag-success', tagSuccess)
+Vue.component('tag-info', tagInfo)
+Vue.component('tag-warning', tagWarning)
+Vue.component('tag-error', tagError)
 
 Vue.config.productionTip = false
 

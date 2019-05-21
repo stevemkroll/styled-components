@@ -1,12 +1,19 @@
 const brand = {
   state: {
     color: {
-      primary: null,
-      secondary: null,
-      tertiary: null,
-      quaternary: null,
-      light: null,
-      dark: null
+      primary: "#00aeef",
+      secondary: "#8dc63f",
+      tertiary: "#efc600",
+      quaternary: "#ef5a00",
+      light: "#ffffff",
+      dark: "#666666",
+      success: "#8dc63f",
+      info: "#00aeef",
+      warning: "#efc600",
+      error: "#ef5a00",
+    },
+    size: {
+      modifier: "8",
     },
   },
   mutations: {
