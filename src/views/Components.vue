@@ -24,12 +24,9 @@
     </section>
     <section>
       <h1>Inputs</h1>
-      <input-user :brand="brand">
-        <input placeholder="username">
-      </input-user>
-      <input-password :brand="brand">
-        <input placeholder="password" type="password">
-      </input-password>
+      <input-user :brand="brand" v-model="user" :disabled="false"/>
+      {{user}}
+      <!-- <input-password :brand="brand"></input-password> -->
     </section>
   </div>
 </template>
@@ -39,6 +36,11 @@ export default {
   name: "buttons",
   props: ["device", "brand"],
   components: {},
+  data() {
+    return {
+      user: "steve"
+    };
+  },
   methods: {
     showAlert(type) {
       alert("clicked " + type);

@@ -5,10 +5,11 @@
     :border="brand.input.border"
     :modifier="brand.size.modifier"
     :disabled="disabled"
-    :placeholder="placeholder"
   >
     <i class="fas fa-user"></i>
-    <slot></slot>
+    <slot>
+      <input placeholder="username">
+    </slot>
     <i class="fas fa-check"></i>
   </inputTemplate>
 </template>

@@ -8,7 +8,9 @@
     :placeholder="placeholder"
   >
     <i class="fas fa-key"></i>
-    <slot></slot>
+    <slot>
+      <input placeholder="password" type="password">
+    </slot>
     <i class="fas fa-check"></i>
   </inputTemplate>
 </template>
