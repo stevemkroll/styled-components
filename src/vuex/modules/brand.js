@@ -14,6 +14,10 @@ const brand = {
       background: "#ffffff",
       border: "#dddddd"
     },
+    switch: {
+      background: "#666666",
+      toggle: "#ffffff",
+    },
     size: {
       modifier: "10",
     },

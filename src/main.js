@@ -45,6 +45,10 @@ Vue.component('picker-color-success', pickerColorSuccess)
 Vue.component('picker-color-info', pickerColorInfo)
 Vue.component('picker-color-text', pickerColorText)
 
+import switchSuccess from "@/components/switch/switchSuccess"
+
+Vue.component('switch-success', switchSuccess)
+
 
 Vue.config.productionTip = false
 

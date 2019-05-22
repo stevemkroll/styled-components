@@ -22,7 +22,10 @@
       <tag-warning :brand="brand">warning</tag-warning>
       <tag-error :brand="brand">error</tag-error>
     </section>
-    <section></section>
+    <section>
+      <h1>Switches</h1>
+      <switch-success :brand="brand"/>
+    </section>
   </div>
 </template>
 
