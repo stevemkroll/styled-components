@@ -33,7 +33,6 @@ const inputTemplate = styled('fieldset', props)
     padding-left: ${props =>  props.modifier + "px"};
     padding-right: ${props =>  props.modifier + "px"};
     font-size: ${props => props.modifier * 1.5 + "px"};
-    opacity: 1;
   }
 
   input {
@@ -49,7 +48,7 @@ const inputTemplate = styled('fieldset', props)
     outline: none;
 
     &::placeholder {
-      color: ${props => props.text};
+      color: ${props => props.text + '40'};
     }
   }
   .fa-check {

@@ -15,7 +15,7 @@ const brand = {
       border: "#dddddd"
     },
     size: {
-      modifier: "8",
+      modifier: "10",
     },
   },
   mutations: {
