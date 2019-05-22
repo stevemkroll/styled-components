@@ -1,38 +1,36 @@
 <template>
-  <section>
-    <form>
-      <StyledFieldset>
-        <i class="fas fa-user" :style="{'padding-left': '0.5rem'}"></i>
-        <StyledInput v-model="username" spellcheck="false"/>
-        <i class="fas fa-check" :style="{'padding-right': '0.5rem'}"></i>
-      </StyledFieldset>
-    </form>
-    {{username}}
-  </section>
+  <form>
+    <input-user :brand="brand" :hasErrors="errors.first('username') ? true : false">
+      <input
+        type="text"
+        name="username"
+        v-model="username"
+        autocomplete="current-password"
+        v-validate.initial="'required|email'"
+      >
+    </input-user>
+    <input-password :brand="brand" :hasErrors="errors.first('password') ? true : false">
+      <input
+        type="password"
+        name="password"
+        v-model="password"
+        autocomplete="current-password"
+        v-validate.initial="'required|min:6'"
+      >
+    </input-password>
+    <btn-success :brand="brand">Login</btn-success>
+  </form>
 </template>
 
 <script>
-import StyledFieldset from "@/components/input/StyledFieldset";
-import StyledInput from "@/components/input/StyledInput";
 export default {
   name: "test",
   props: ["device", "brand"],
-  components: { StyledInput, StyledFieldset },
   data() {
     return {
-      username: "test_merchant"
+      username: "",
+      password: ""
     };
   }
 };
 </script>
-
-<style lang="scss" scoped>
-section {
-  text-align: center;
-  form {
-    margin: 0 auto;
-    width: fit-content;
-    margin-top: 50vh;
-  }
-}
-</style>

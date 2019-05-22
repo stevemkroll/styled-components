@@ -6,6 +6,9 @@ import store from './store'
 import "@/assets/main.scss"
 import "@fortawesome/fontawesome-free/js/all.js"
 
+import VeeValidate from 'vee-validate'
+Vue.use(VeeValidate);
+
 // BUTTONS
 import btnSuccess from "@/components/button/btnSuccess"
 import btnInfo from "@/components/button/btnInfo"

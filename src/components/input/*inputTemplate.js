@@ -4,7 +4,9 @@ const props = {
   background: String,
   border: String,
   text: String,
+  success: String,
   modifier: String,
+  hasErrors: Boolean
 };
 
 // eslint-disable-next-line no-unexpected-multiline
@@ -23,14 +25,14 @@ const inputTemplate = styled('fieldset', props)
   border-style: solid;
 
   svg {
-    padding-left: ${props =>  props.modifier / 2 + "px"};
-    padding-right: ${props =>  props.modifier / 2 + "px"};
+    padding-left: ${props =>  props.modifier + "px"};
+    padding-right: ${props =>  props.modifier + "px"};
     font-size: ${props => props.modifier * 1.5 + "px"};
   }
 
   input {
-    padding-top: ${props => props.modifier / 2 + "px"};
-    padding-bottom: ${props => props.modifier / 2 + "px"};
+    padding-top: ${props => props.modifier + "px"};
+    padding-bottom: ${props => props.modifier + "px"};
     background: ${props => props.background};
     color: ${props => props.text};
     font-weight: bold;
@@ -44,7 +46,9 @@ const inputTemplate = styled('fieldset', props)
     }
   }
   .fa-check {
-    color: ${props => props.border};
+    transition: ${props => ( ( props.modifier / 8 ) / 2 ) + "s"};
+    color: ${props => props.success};
+    opacity: ${props => props.hasErrors ? 0 : 1}
   }
 `;
 

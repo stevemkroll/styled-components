@@ -3,14 +3,12 @@
     :background="brand.input.background"
     :text="brand.input.text"
     :border="brand.input.border"
+    :success="brand.color.success"
     :modifier="brand.size.modifier"
-    :disabled="disabled"
-    :placeholder="placeholder"
+    :hasErrors="this.hasErrors"
   >
     <i class="fas fa-key"></i>
-    <slot>
-      <input placeholder="password" type="password">
-    </slot>
+    <slot></slot>
     <i class="fas fa-check"></i>
   </inputTemplate>
 </template>
@@ -19,7 +17,7 @@
 import inputTemplate from "./*inputTemplate";
 export default {
   name: "input-password",
-  props: ["brand", "disabled", "placeholder"],
+  props: ["brand", "hasErrors"],
   components: { inputTemplate }
 };
 </script>
