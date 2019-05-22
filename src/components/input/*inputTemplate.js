@@ -33,7 +33,7 @@ const inputTemplate = styled('fieldset', props)
     padding-left: ${props =>  props.modifier + "px"};
     padding-right: ${props =>  props.modifier + "px"};
     font-size: ${props => props.modifier * 1.5 + "px"};
-    opacity: 0.8;
+    opacity: 1;
   }
 
   input {
