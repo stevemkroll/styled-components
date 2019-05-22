@@ -19,18 +19,22 @@ const brand = {
     },
   },
   mutations: {
-    updateBrand(state, payload) {
-      state.color.primary = payload.color.primary
-      state.color.secondary = payload.color.secondary
-      state.color.tertiary = payload.color.tertiary
-      state.color.quaternary = payload.color.quaternary
-      state.color.light = payload.color.light
-      state.color.dark = payload.color.dark
+    updateColorSuccess(state, payload) {
+      state.color.success = payload
+    },
+    updateColorInfo(state, payload) {
+      state.color.info = payload
     }
   },
   actions: {
-    updateBrand(context, payload) {
-      context.commit('updateBrand', payload)
+    // updateBrand(context, payload) {
+    //   context.commit('updateBrand', payload)
+    // }
+    updateColorSuccess(context, payload) {
+      context.commit('updateColorSuccess', payload)
+    },
+    updateColorInfo(context, payload) {
+      context.commit('updateColorInfo', payload)
     }
   },
   getters: {

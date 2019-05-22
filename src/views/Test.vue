@@ -1,27 +1,39 @@
 <template>
-  <form>
-    <input-user :brand="brand" :hasErrors="errors.first('username') ? true : false">
-      <input
-        type="text"
-        name="username"
-        v-model="username"
-        placeholder="Username"
-        autocomplete="current-password"
-        v-validate.initial="'required|email'"
-      >
-    </input-user>
-    <input-password :brand="brand" :hasErrors="errors.first('password') ? true : false">
-      <input
-        type="password"
-        name="password"
-        v-model="password"
-        placeholder="Password"
-        autocomplete="current-password"
-        v-validate.initial="'required|min:6'"
-      >
-    </input-password>
-    <btn-success :brand="brand" :disabled="errors.any()" :action="() => showAlert('success')">login</btn-success>
-  </form>
+  <div>
+    <section>
+      <form>
+        <input-user :brand="brand" :hasErrors="errors.first('username') ? true : false">
+          <input
+            type="text"
+            name="username"
+            v-model="username"
+            placeholder="Username"
+            autocomplete="current-password"
+            v-validate.initial="'required|email'"
+          >
+        </input-user>
+        <input-password :brand="brand" :hasErrors="errors.first('password') ? true : false">
+          <input
+            type="password"
+            name="password"
+            v-model="password"
+            placeholder="Password"
+            autocomplete="current-password"
+            v-validate.initial="'required|min:6'"
+          >
+        </input-password>
+        <btn-success
+          :brand="brand"
+          :disabled="errors.any()"
+          :action="() => showAlert('success')"
+        >login</btn-success>
+      </form>
+    </section>
+    <section>
+      <picker-color-success :brand="brand"/>
+      <picker-color-info :brand="brand"/>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -44,8 +56,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  padding: 5rem;
+}
 form {
-  padding: 30vw;
+  width: 50%;
 }
 </style>
 

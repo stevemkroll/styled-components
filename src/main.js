@@ -37,6 +37,12 @@ import inputPassword from "@/components/input/inputPassword"
 Vue.component('input-user', inputUser)
 Vue.component('input-password', inputPassword)
 
+import pickerColorSuccess from "@/components/pickers/pickerColorSuccess"
+import pickerColorInfo from "@/components/pickers/pickerColorInfo"
+
+Vue.component('picker-color-success', pickerColorSuccess)
+Vue.component('picker-color-info', pickerColorInfo)
+
 
 Vue.config.productionTip = false
 
