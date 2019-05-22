@@ -15,9 +15,9 @@ const inputTemplate = styled('fieldset', props)
 `
   margin: ${props => props.modifier + "px"};
   border-radius: ${props => props.modifier / 2 + "px"};
-  transition: ${props => ( ( props.modifier / 8 ) / 2 ) + "s"};
+  transition: ${props => ( props.modifier / 8 ) + "s"};
   font-size: ${props => props.modifier * 1.5 + "px"};
-  border-color: ${props => props.border};
+  border-color: ${props => props.text};
   background: ${props => props.background};
   color: ${props => props.text};
   width: auto;
@@ -33,6 +33,7 @@ const inputTemplate = styled('fieldset', props)
     padding-left: ${props =>  props.modifier + "px"};
     padding-right: ${props =>  props.modifier + "px"};
     font-size: ${props => props.modifier * 1.5 + "px"};
+    opacity: 0.8;
   }
 
   input {
@@ -48,11 +49,11 @@ const inputTemplate = styled('fieldset', props)
     outline: none;
 
     &::placeholder {
-      color: ${props => props.border};
+      color: ${props => props.text};
     }
   }
   .fa-check {
-    transition: ${props => ( ( props.modifier / 8 ) / 2 ) + "s"};
+    transition: ${props => ( props.modifier / 8 ) + "s"};
     color: ${props => props.success};
     opacity: ${props => props.hasErrors ? 0 : 1}
   }

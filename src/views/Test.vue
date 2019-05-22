@@ -32,6 +32,7 @@
     <section>
       <picker-color-success :brand="brand"/>
       <picker-color-info :brand="brand"/>
+      <picker-color-text :brand="brand"/>
     </section>
   </div>
 </template>

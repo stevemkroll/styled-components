@@ -24,6 +24,9 @@ const brand = {
     },
     updateColorInfo(state, payload) {
       state.color.info = payload
+    },
+    updateColorText(state, payload) {
+      state.input.text = payload
     }
   },
   actions: {
@@ -35,6 +38,9 @@ const brand = {
     },
     updateColorInfo(context, payload) {
       context.commit('updateColorInfo', payload)
+    },
+    updateColorText(context, payload) {
+      context.commit('updateColorText', payload)
     }
   },
   getters: {
