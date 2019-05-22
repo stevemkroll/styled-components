@@ -1,11 +1,11 @@
 <template>
   <form>
-    <!-- <fieldset> -->
     <input-user :brand="brand" :hasErrors="errors.first('username') ? true : false">
       <input
         type="text"
         name="username"
         v-model="username"
+        placeholder="Username"
         autocomplete="current-password"
         v-validate.initial="'required|email'"
       >
@@ -15,12 +15,12 @@
         type="password"
         name="password"
         v-model="password"
+        placeholder="Password"
         autocomplete="current-password"
         v-validate.initial="'required|min:6'"
       >
     </input-password>
     <btn-success :brand="brand" :disabled="errors.any()" :action="() => showAlert('success')">login</btn-success>
-    <!-- </fieldset> -->
   </form>
 </template>
 
