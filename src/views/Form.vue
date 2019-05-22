@@ -7,8 +7,9 @@
             type="text"
             name="username"
             v-model="username"
-            placeholder="Username"
+            placeholder="Email"
             autocomplete="current-password"
+            spellcheck="false"
             v-validate.initial="'required|email'"
           >
         </input-user>
@@ -19,6 +20,7 @@
             v-model="password"
             placeholder="Password"
             autocomplete="current-password"
+            spellcheck="false"
             v-validate.initial="'required|min:6'"
           >
         </input-password>
@@ -39,7 +41,7 @@
 
 <script>
 export default {
-  name: "form",
+  name: "login-form",
   props: ["device", "brand"],
   data() {
     return {
