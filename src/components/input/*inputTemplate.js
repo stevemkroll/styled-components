@@ -3,6 +3,7 @@ import styled from 'vue-styled-components';
 const props = {
   background: String,
   border: String,
+  focus: String,
   text: String,
   success: String,
   modifier: String,
@@ -23,6 +24,10 @@ const inputTemplate = styled('fieldset', props)
   font-weight: bold;
   outline: none;
   border-style: solid;
+
+  &:active,:focus,:focus-within {
+    border-color: ${props => props.focus};
+  }
 
   svg {
     padding-left: ${props =>  props.modifier + "px"};

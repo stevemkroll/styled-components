@@ -4,6 +4,7 @@
     :text="brand.input.text"
     :border="brand.input.border"
     :success="brand.color.success"
+    :focus="brand.color.info"
     :modifier="brand.size.modifier"
     :hasErrors="this.hasErrors"
   >
