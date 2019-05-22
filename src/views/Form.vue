@@ -30,16 +30,16 @@
       </form>
     </section>
     <section>
-      <picker-color-success :brand="brand"/>
-      <picker-color-info :brand="brand"/>
-      <picker-color-text :brand="brand"/>
+      <picker-color-success :brand="brand" class="picker"/>
+      <picker-color-info :brand="brand" class="picker"/>
+      <picker-color-text :brand="brand" class="picker"/>
     </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: "test",
+  name: "form",
   props: ["device", "brand"],
   data() {
     return {
@@ -62,6 +62,9 @@ section {
   flex: 1 0 auto;
   justify-content: center;
   padding: 5rem;
+  .picker {
+    margin: 1rem;
+  }
 }
 form {
   width: 50%;

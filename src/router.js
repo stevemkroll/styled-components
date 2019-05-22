@@ -8,7 +8,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [{
       path: '/',
-      redirect: '/test'
+      redirect: '/form'
     },
     {
       path: '/components',
@@ -16,9 +16,9 @@ export default new Router({
       component: () => import( /* webpackChunkName: "components" */ './views/Components.vue')
     },
     {
-      path: '/test',
-      name: 'test',
-      component: () => import( /* webpackChunkName: "test" */ './views/Test.vue')
+      path: '/form',
+      name: 'form',
+      component: () => import( /* webpackChunkName: "form" */ './views/Form.vue')
     }
   ]
 })
