@@ -8,17 +8,18 @@ const props = {
 };
 
 // eslint-disable-next-line no-unexpected-multiline
-const btnTemplate = styled('button', props)
+const btnTemplate = styled('fieldset', props)
 `
   padding: ${props => props.modifier + "px"};
   margin: ${props => props.modifier + "px"};
   border-radius: ${props => props.modifier / 2 + "px"};
   border-width: ${props => props.modifier / 4 + "px"};
-  transition: ${props => ( ( props.modifier / 8 ) / 2 ) + "s"};
+  transition: ${props => props.disabled ? 0 : ( props.modifier / 8 ) + "s"};
   font-weight: bold;
   font-size: ${props => props.modifier * 1.5 + "px"};
   text-transform: capitalize;
   outline: none;
+  border-style: solid;
   border-color: ${props => props.background};
   background: ${props => props.background};
   color: ${props => props.text};

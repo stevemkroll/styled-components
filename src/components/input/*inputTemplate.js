@@ -19,7 +19,7 @@ const inputTemplate = styled('fieldset', props)
   border-color: ${props => props.border};
   background: ${props => props.background};
   color: ${props => props.text};
-  width: fit-content;
+  width: auto;
   font-weight: bold;
   outline: none;
   border-style: solid;
@@ -36,6 +36,7 @@ const inputTemplate = styled('fieldset', props)
     background: ${props => props.background};
     color: ${props => props.text};
     font-weight: bold;
+    width: ${props => "calc(100% - " + (props.modifier * 7) + "px)"};
     height: 100%;
     border-style: none;
     font-size: ${props => props.modifier * 1.5 + "px"};
